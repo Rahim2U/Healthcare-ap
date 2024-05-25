@@ -10,7 +10,6 @@ page = st.sidebar.radio("Go to", ["Home", "Services", "Book an Appointment", "Ou
 # Home Page
 if page == "Home":
     st.title("Welcome to Our Home Healthcare Services")
-    st.image("home_healthcare.jpg", use_column_width=True)
     st.write("""
         We provide top-notch home healthcare services to ensure the well-being of our clients in the comfort of their own homes.
         Our team of dedicated professionals is here to assist with a variety of healthcare needs.
@@ -50,19 +49,10 @@ elif page == "Our Team":
     st.write("""
         Our team consists of experienced and compassionate professionals dedicated to providing the best care possible.
     """)
-    col1, col2, col3 = st.columns(3)
 
-    with col1:
-        st.image("team_member_1.jpg", use_column_width=True)
-        st.write("**John Doe, RN**\nRegistered Nurse")
-
-    with col2:
-        st.image("team_member_2.jpg", use_column_width=True)
-        st.write("**Jane Smith, PT**\nPhysical Therapist")
-
-    with col3:
-        st.image("team_member_3.jpg", use_column_width=True)
-        st.write("**Sarah Johnson, OT**\nOccupational Therapist")
+    st.write("**John Doe, RN**\nRegistered Nurse")
+    st.write("**Jane Smith, PT**\nPhysical Therapist")
+    st.write("**Sarah Johnson, OT**\nOccupational Therapist")
 
 # Contact Us Page
 elif page == "Contact Us":
